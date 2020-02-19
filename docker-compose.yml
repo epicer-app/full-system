@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api:
+    build: ./services/api
+    ports:
+      - "3000:3000"
+  vue:
+    build: ./apps/web-vuejs
+    ports:
+      - "8080:8080"
